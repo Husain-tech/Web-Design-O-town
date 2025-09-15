@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Otown Car Customs – Professionel Bilvask & Detailing i Odense</title>
+  <meta name="description" content="Book bilvask hurtigt og nemt. Bronze, Sølv og Guld pakker. Se galleri, anmeldelser og priser. Otown Car Customs – professionel bilpleje." />
+  <meta name="keywords" content="bilvask, bilpleje, detailing, keramisk coating, Odense, car wash, car detailing" />
+  <meta property="og:title" content="Otown Car Customs – Bilvask & Detailing" />
+  <meta property="og:description" content="Book din bilvask online. Bronze, Sølv og Guld pakker. Se galleri og anmeldelser." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="da_DK" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Tailwind CSS CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(2,132,199,0.15)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Favicon (emoji) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoWash",
+    "name": "Otown Car Customs",
+    "email": "otowncarcustoms@gmail.com",
+    "url": "https://example.com",
+    "areaServed": "Odense, Denmark",
+    "priceRange": "DKK 499–1399",
+    "sameAs": [
+      "https://www.instagram.com/otowncarcustoms"
+    ]
+  }
+  </script>
+
+  <style>
+    /* Smooth reveal */
+    [data-reveal] { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+    [data-reveal].visible { opacity: 1; transform: translateY(0); }
+
+    /* Simple carousel */
+    .carousel { display: grid; grid-auto-flow: column; grid-auto-columns: 100%; overflow: hidden; }
+    .carousel-inner { display: flex; transition: transform .5s ease; }
+    .carousel-slide { min-width: 100%; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 selection:bg-brand-200/60">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-semibold text-slate-900">
+        <span class="text-2xl">🚗</span>
+        <span>Otown Car Customs</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#pakker" class="hover:text-brand-700">Pakker & Priser</a>
+        <a href="#galleri" class="hover:text-brand-700">Galleri</a>
+        <a href="#anmeldelser" class="hover:text-brand-700">Anmeldelser</a>
+        <a href="#booking" class="hover:text-brand-700">Booking</a>
+        <a href="#kontakt" class="hover:text-brand-700">Kontakt</a>
+      </nav>
+      <a href="#booking" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm font-medium shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-400">Book nu</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-50 to-white"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div data-reveal>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+            Professionel bilvask – hurtig, pålidelig og organiseret
+          </h1>
+          <p class="mt-4 text-lg text-slate-700 max-w-prose">
+            Nå ud til flere kunder med en struktureret online booking. Vi tilbyder 
+            Bronze, Sølv og Guld pakker – alt fra grundig håndvask til premium pleje.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#booking" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-5 py-3 font-semibold shadow-soft hover:bg-brand-700">Book tid</a>
+            <a href="#pakker" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:bg-white">Se pakker</a>
+          </div>
+          <dl class="mt-8 grid grid-cols-2 gap-6 text-sm">
+            <div>
+              <dt class="text-slate-500">Åbningstider</dt>
+              <dd class="font-medium">Man–Lør 09:00–18:00</dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">Lokation</dt>
+              <dd class="font-medium">Odense & omegn</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="relative" data-reveal>
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-200 to-brand-400 shadow-soft relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.4),transparent_60%)]"></div>
+            <div class="absolute bottom-4 left-4 right-4 bg-white/80 backdrop-blur p-4 rounded-xl border border-white/60">
+              <p class="text-sm text-slate-700">"Super service og skinnende resultat!" – <span class="font-medium">Kunde</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value props -->
+  <section class="py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200" data-reveal>
+          <h3 class="font-semibold">Online booking</h3>
+          <p class="mt-2 text-sm text-slate-600">Struktureret kalender og automatisk bekræftelse.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200" data-reveal>
+          <h3 class="font-semibold">Pålidelig service</h3>
+          <p class="mt-2 text-sm text-slate-600">Standardiserede pakker og klare priser.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200" data-reveal>
+          <h3 class="font-semibold">Galleri & anmeldelser</h3>
+          <p class="mt-2 text-sm text-slate-600">Billeder af kundebiler og ægte feedback.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200" data-reveal>
+          <h3 class="font-semibold">Sikker betaling</h3>
+          <p class="mt-2 text-sm text-slate-600">Forberedelse til online betaling (MobilePay/Stripe).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages & Prices -->
+  <section id="pakker" class="py-16 bg-gradient-to-b from-white to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center" data-reveal>
+        <h2 class="text-2xl sm:text-4xl font-extrabold">Pakker & Priser</h2>
+        <p class="mt-3 text-slate-600">Vælg den løsning der passer til dit behov</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <!-- Bronze -->
+        <article class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col" data-reveal>
+          <h3 class="text-xl font-bold">Bronze – Basis pleje</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li>Udvendigt: Håndvask med skum og shampoo</li>
+            <li>Fælgerens & dækpleje</li>
+            <li>Aftørring uden striber</li>
+            <li>Indvendigt: Støvsugning af kabine & bagagerum</li>
+            <li>Aftørring af overflader (plastik/vinyl)</li>
+            <li>Vinduespuds indvendigt</li>
+          </ul>
+          <div class="mt-6 flex items-end justify-between">
+            <div class="text-2xl font-extrabold">499,-</div>
+            <button data-package="Bronze" class="book-btn inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm font-semibold hover:bg-brand-700">Vælg Bronze</button>
+          </div>
+        </article>
+        <!-- Silver -->
+        <article class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col" data-reveal>
+          <div class="inline-flex items-center gap-2 text-xs font-semibold bg-brand-100 text-brand-800 px-2.5 py-1 rounded-full w-max">Mest valgt</div>
+          <h3 class="mt-2 text-xl font-bold">Sølv – Udvidet pleje</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li>Udvendigt: Alt fra Bronze</li>
+            <li>Insektrens & tjærefjernelse</li>
+            <li>Voksbehandling for ekstra glans og beskyttelse</li>
+            <li>Indvendigt: Alt fra Bronze</li>
+            <li>Dybere rengøring af paneler, døre & luftdyser</li>
+            <li>Duftbehandling / kabinefrisker</li>
+          </ul>
+          <div class="mt-6 flex items-end justify-between">
+            <div class="text-2xl font-extrabold">899,-</div>
+            <button data-package="Sølv" class="book-btn inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm font-semibold hover:bg-brand-700">Vælg Sølv</button>
+          </div>
+        </article>
+        <!-- Gold -->
+        <article class="rounded-2xl bg-white border border-slate-200 p-6 flex flex-col" data-reveal>
+          <h3 class="text-xl font-bold">Guld – Premium pleje (uden polering)</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li>Udvendigt: Alt fra Sølv</li>
+            <li>Lakforsegling eller keramisk voks</li>
+            <li>Dæk- og fælgforsegling</li>
+            <li>Indvendigt: Alt fra Sølv</li>
+            <li>Sæderens (tekstil eller læderbehandling)</li>
+            <li>Rens af måtter & dybdegående støvsugning</li>
+            <li>Antibakteriel kabinerens (damprens indvendigt)</li>
+          </ul>
+          <div class="mt-6 flex items-end justify-between">
+            <div class="text-2xl font-extrabold">1.399,-</div>
+            <button data-package="Guld" class="book-btn inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm font-semibold hover:bg-brand-700">Vælg Guld</button>
+          </div>
+        </article>
+      </div>
+      <p class="mt-6 text-xs text-slate-500">Priser er vejledende og kan variere efter biltype/tilvalg.</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="galleri" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4" data-reveal>
+        <div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold">Galleri</h2>
+          <p class="mt-2 text-slate-600">Før/efter og kundebiler</p>
+        </div>
+        <a href="https://www.instagram.com/otowncarcustoms" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 hover:underline">Se mere på Instagram <span aria-hidden>↗</span></a>
+      </div>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <!-- Placeholder images: replace src with egne billeder -->
+        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop" alt="Bilvask" class="rounded-xl aspect-[4/3] object-cover" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1515923162046-9013c3a3d7bc?q=80&w=1200&auto=format&fit=crop" alt="Detaljering" class="rounded-xl aspect-[4/3] object-cover" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=1200&auto=format&fit=crop" alt="Interiør rens" class="rounded-xl aspect-[4/3] object-cover" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1200&auto=format&fit=crop" alt="Felgrens" class="rounded-xl aspect-[4/3] object-cover" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="anmeldelser" class="py-16 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between" data-reveal>
+        <h2 class="text-2xl sm:text-4xl font-extrabold">Anmeldelser</h2>
+        <div class="flex items-center gap-2 text-sm">
+          <button id="prevReview" class="rounded-lg border border-white/20 px-3 py-1.5 hover:bg-white/10">◀</button>
+          <button id="nextReview" class="rounded-lg border border-white/20 px-3 py-1.5 hover:bg-white/10">▶</button>
+        </div>
+      </div>
+      <div class="mt-6 rounded-2xl bg-white/5 border border-white/10 p-6">
+        <div class="carousel overflow-hidden">
+          <div class="carousel-inner" id="reviewsCarousel">
+            <div class="carousel-slide px-1">
+              <blockquote class="text-lg">“Skinnende resultat og hurtig service. Kommer helt sikkert igen!”</blockquote>
+              <p class="mt-3 text-sm text-white/80">– Mikkel, VW Golf</p>
+            </div>
+            <div class="carousel-slide px-1">
+              <blockquote class="text-lg">“Nem online booking og fair priser. Super oplevelse.”</blockquote>
+              <p class="mt-3 text-sm text-white/80">– Sara, Toyota Yaris</p>
+            </div>
+            <div class="carousel-slide px-1">
+              <blockquote class="text-lg">“Grundig indvendig rens. Bilen føltes som ny.”</blockquote>
+              <p class="mt-3 text-sm text-white/80">– Jonas, BMW 3-serie</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div data-reveal>
+          <h2 class="text-2xl sm:text-4xl font-extrabold">Book en tid</h2>
+          <p class="mt-3 text-slate-600">Udfyld formularen – du modtager bekræftelse pr. e-mail/SMS.</p>
+          <ul class="mt-6 space-y-2 text-sm text-slate-600 list-disc pl-5">
+            <li>Vælg ønsket pakke og dato/tid</li>
+            <li>Betaling kan aftales ved aflevering (MobilePay) eller forudbetales (Stripe – snart)</li>
+            <li>Afbestilling senest 24 timer før</li>
+          </ul>
+        </div>
+
+        <form id="bookingForm" class="rounded-2xl bg-white border border-slate-200 p-6 shadow-soft" data-reveal>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium">Fulde navn</label>
+              <input required type="text" name="name" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Telefon</label>
+              <input required type="tel" name="phone" pattern="[0-9+\- ]{6,}" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-medium">E-mail</label>
+              <input required type="email" name="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Bil (mærke/model)</label>
+              <input required type="text" name="car" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Reg.nr. (valgfrit)</label>
+              <input type="text" name="plate" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Pakke</label>
+              <select required name="package" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500">
+                <option value="">Vælg pakke…</option>
+                <option>Bronze</option>
+                <option>Sølv</option>
+                <option>Guld</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Dato</label>
+              <input required type="date" name="date" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Tid</label>
+              <input required type="time" name="time" min="09:00" max="18:00" step="1800" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-medium">Noter</label>
+              <textarea name="notes" rows="3" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="Særlige ønsker…"></textarea>
+            </div>
+            <div class="sm:col-span-2 flex items-start gap-3">
+              <input id="consent" type="checkbox" required class="mt-1 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+              <label for="consent" class="text-sm text-slate-600">Jeg accepterer, at mine oplysninger bruges til at kontakte mig vedr. booking.</label>
+            </div>
+            <div class="sm:col-span-2 flex gap-3">
+              <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-5 py-3 font-semibold hover:bg-brand-700">Bekræft booking</button>
+              <button type="reset" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:bg-white">Nulstil</button>
+            </div>
+          </div>
+          <p id="formMsg" class="mt-4 text-sm"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="kontakt" class="py-16 bg-gradient-to-b from-slate-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div data-reveal>
+          <h2 class="text-2xl sm:text-4xl font-extrabold">Kontakt</h2>
+          <p class="mt-3 text-slate-600">Har du spørgsmål? Skriv eller følg os.</p>
+          <dl class="mt-6 space-y-3 text-sm">
+            <div>
+              <dt class="text-slate-500">E-mail</dt>
+              <dd class="font-medium"><a class="text-brand-700 hover:underline" href="mailto:otowncarcustoms@gmail.com">otowncarcustoms@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">Instagram</dt>
+              <dd class="font-medium"><a class="text-brand-700 hover:underline" href="https://www.instagram.com/otowncarcustoms" target="_blank" rel="noopener">@otowncarcustoms</a></dd>
+            </div>
+          </dl>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6" data-reveal>
+          <h3 class="font-semibold">For personale – arbejdsgang</h3>
+          <ol class="mt-3 list-decimal pl-5 text-sm text-slate-600 space-y-2">
+            <li>Log ind (admin-side – kan tilføjes senere).</li>
+            <li>Se dagens bookinger og walk-ins.</li>
+            <li>Vælg kundens bil og start vaske-cyklus.</li>
+            <li>Opdater status til “I gang” og afslut når færdig.</li>
+          </ol>
+          <p class="mt-3 text-xs text-slate-500">*Denne demo viser frontenden. Backend/kalenderbetaling kan tilføjes senere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> Otown Car Customs. Alle rettigheder forbeholdes.</p>
+      <div class="flex items-center gap-4">
+        <a href="#pakker" class="hover:underline">Pakker</a>
+        <a href="#booking" class="hover:underline">Book</a>
+        <a href="#kontakt" class="hover:underline">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="hidden fixed inset-0 z-[60] items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative bg-white rounded-2xl p-6 max-w-lg w-full shadow-2xl border border-slate-200">
+      <h3 class="text-lg font-bold">Tak for din booking!</h3>
+      <p id="modalText" class="mt-2 text-sm text-slate-600"></p>
+      <div class="mt-4 flex justify-end gap-3">
+        <button id="modalClose" class="rounded-xl border border-slate-300 px-4 py-2 font-semibold">Luk</button>
+        <a id="modalEmail" class="rounded-xl bg-brand-600 text-white px-4 py-2 font-semibold" href="#">Send e-mail</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Reveal on scroll
+    const onScroll = () => {
+      document.querySelectorAll('[data-reveal]').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) el.classList.add('visible');
+      });
+    };
+    document.addEventListener('scroll', onScroll);
+    window.addEventListener('load', onScroll);
+
+    // Reviews carousel
+    const carousel = document.getElementById('reviewsCarousel');
+    let slide = 0;
+    const slides = () => Array.from(carousel.children);
+    const updateCarousel = () => { carousel.style.transform = `translateX(-${slide * 100}%)`; };
+    document.getElementById('prevReview').addEventListener('click', () => { slide = (slide - 1 + slides().length) % slides().length; updateCarousel(); });
+    document.getElementById('nextReview').addEventListener('click', () => { slide = (slide + 1) % slides().length; updateCarousel(); });
+
+    // Package quick-select
+    document.querySelectorAll('.book-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelector('#booking select[name="package"]').value = btn.dataset.package;
+        document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Booking form handler (demo – mailto compose)
+    const form = document.getElementById('bookingForm');
+    const msg = document.getElementById('formMsg');
+    const modal = document.getElementById('modal');
+    const modalText = document.getElementById('modalText');
+    const modalEmail = document.getElementById('modalEmail');
+    const modalClose = document.getElementById('modalClose');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+
+      // Simple availability check (demo): no Sundays
+      const date = new Date(data.date + 'T' + (data.time || '09:00'));
+      if (date.getDay() === 0) {
+        msg.textContent = 'Vi tager ikke bookinger om søndagen. Vælg venligst en anden dato.';
+        msg.className = 'mt-4 text-sm text-red-600';
+        return;
+      }
+
+      const summary = `Hej, jeg vil gerne booke en ${data.package}-pakke den ${data.date} kl. ${data.time}.\n\nNavn: ${data.name}\nTelefon: ${data.phone}\nE-mail: ${data.email}\nBil: ${data.car}\nReg.nr.: ${data.plate || '-'}\nNoter: ${data.notes || '-'}\n`;
+
+      modalText.textContent = 'Din forespørgsel er registreret. Klik \"Send e-mail\" for at sende detaljerne til os og modtage bekræftelse.';
+      const subject = encodeURIComponent(`Booking: ${data.package} – ${data.name}`);
+      const body = encodeURIComponent(summary);
+      modalEmail.href = `mailto:otowncarcustoms@gmail.com?subject=${subject}&body=${body}`;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      msg.textContent = '';
+      form.reset();
+    });
+
+    modalClose.addEventListener('click', () => { modal.classList.add('hidden'); modal.classList.remove('flex'); });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
